@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.topBar {
+  flex: 0 1 auto;
+  /* height: 70px; */
+  background-color: white;
+  color: #1f3e59;
+  padding: 25px 90px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.titlePara {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.section {
+  flex: 1 1 auto;
+  background-color: #f4f4f4;
+}
+
+.button {
+  background-color: #1f3e59;
+  border: none;
+  color: white;
+  padding: 0px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copyright {
+  flex: 0 1 auto;
+  font-weight: 600;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  color: #1f3e59;
+}
