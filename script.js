@@ -39,21 +39,46 @@ function AddNewBook() {
   updateBookList(title, author, pages, isAlreadyRead);
 }
 
+function setButtonColor() {
+  div.querySelectorAll(".isReadBtn").forEach((btn) => {
+    console.log(btn.textContent === "Not Read Yet");
+    if (btn.textContent === "Not Read Yet")
+      btn.classList.add("redColor", "redColor:hover");
+  });
+}
+
+function toggleColor(btn) {
+  if (btn.textContent === "Not Read Yet") {
+    btn.textContent = "Already Read";
+    btn.classList.remove("redColor", "redColor:hover");
+  } else {
+    btn.textContent = "Not Read Yet";
+    btn.classList.add("redColor", "redColor:hover");
+  }
+}
+
+function addBtnToggler() {
+  div.querySelectorAll(".isReadBtn").forEach((btn) => {
+    btn.addEventListener("click", (e) => toggleColor(btn));
+  });
+}
+
 let div = document.querySelector(".bookList");
 
 function updateBookList(title, author, pages, isAlreadyRead) {
-  div.innerHTML = "";
-  for (let i = 0; i < myLibrary.length; i++) {
-    div.innerHTML += `<div class="bookCard">
-    <p>"${myLibrary[i].title}"</p>
-    <p>By ${myLibrary[i].author}</p>
-    <p>${myLibrary[i].pages} Pages</p>
+  div.innerHTML += `<div class="bookCard">
+    <p>"${title}"</p>
+    <p>By ${author}</p>
+    <p>${pages} Pages</p>
     <div class="bookCardBtn">
-      <button class="isReadBtn button addBtn">${myLibrary[i].isAlreadyRead}</button>
+      <button class="isReadBtn isReadBtn:hover button addBtn">${
+        isAlreadyRead ? "Already Read" : "Not Read Yet"
+      }</button>
       <button class="removeBtn button addBtn">Remove</button>
     </div>
   </div>`;
-  }
+  setButtonColor();
+  addBtnToggler();
   removeListener();
 }
 

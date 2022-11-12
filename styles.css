@@ -179,13 +179,17 @@ body {
 }
 
 .isReadBtn {
-  background-color: #b1cd4c;
+  background-color: #afd427;
   color: white;
 }
 
 .isReadBtn:hover {
-  background-color: #a2cb0c;
+  background-color: #b1cd4c;
 }
+
+/* .isReadBtn:hover {
+  background-color: #a2cb0c;
+} */
 
 .removeBtn {
   background-color: #f4f4f4;
@@ -194,4 +198,12 @@ body {
 
 .removeBtn:hover {
   background-color: #e1e1e1;
+}
+
+.redColor {
+  background-color: #e03c3c;
+}
+
+.redColor:hover {
+  background-color: #d34949;
 }
