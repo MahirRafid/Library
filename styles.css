@@ -143,3 +143,55 @@ body {
   width: 90%;
   padding: 10px 20px;
 }
+
+.bookList {
+  padding: 30px 120px;
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.bookCard {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  padding: 25px 20px;
+  background-color: white;
+  color: #1f3e59;
+  width: 30%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bookCardBtn {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.isReadBtn,
+.removeBtn {
+  font-size: 18px;
+}
+
+.isReadBtn {
+  background-color: #b1cd4c;
+  color: white;
+}
+
+.isReadBtn:hover {
+  background-color: #a2cb0c;
+}
+
+.removeBtn {
+  background-color: #f4f4f4;
+  color: #1f3e59;
+}
+
+.removeBtn:hover {
+  background-color: #e1e1e1;
+}

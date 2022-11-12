@@ -36,6 +36,7 @@
             + Add book
           </button>
         </div>
+        <div class="bookList"></div>
       </div>
       <div class="copyright"></div>
       <!-- Modal -->
@@ -63,7 +64,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <form>
+              <form id="bookForm">
                 <div class="form-group">
                   <label class="form-title" for="bookTitle">Book Title</label>
                   <input type="text" class="form-control" id="bookTitle" />
@@ -80,7 +81,7 @@
                   <input
                     type="checkbox"
                     class="form-check-input"
-                    id="isAlreayRead"
+                    id="isAlreadyRead"
                   />
                   <label class="form-check-label form-title" for="isAlreayRead"
                     >Have you already read this book ?
@@ -96,7 +97,11 @@
               >
                 Close
               </button>
-              <button type="button" class="button modalBtn modalSave">
+              <button
+                type="button"
+                class="button modalBtn modalSave"
+                data-dismiss="modal"
+              >
                 Save changes
               </button>
             </div>
