@@ -37,6 +37,13 @@ body {
 .section {
   flex: 1 1 auto;
   background-color: #f4f4f4;
+  width: 100%;
+}
+
+.addBook {
+  display: flex;
+  justify-content: center;
+  margin: 24px;
 }
 
 .button {
@@ -53,6 +60,28 @@ body {
   cursor: pointer;
 }
 
+.addBtn {
+  background-color: #f4f4f4;
+  color: #1f3e59;
+  padding: 8px 24px;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 8px;
+}
+
+.addBtn:hover {
+  background-color: #e1e1e1;
+}
+
+.modalBtn {
+  background-color: #f4f4f4;
+  color: #1f3e59;
+  padding: 6px 16px;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 8px;
+}
+
 .copyright {
   flex: 0 1 auto;
   font-weight: 600;
@@ -60,4 +89,57 @@ body {
   display: flex;
   justify-content: center;
   color: #1f3e59;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-control {
+  margin-top: 8px;
+}
+
+.modal {
+  font-family: "Noto Sans", sans-serif;
+  color: #1f3e59;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.form-title {
+  font-weight: 600;
+}
+
+.modalClose {
+  background-color: #cd5c5c;
+  color: white;
+}
+
+.modalClose:hover {
+  background-color: #e13737;
+  transform: scale(1.01);
+}
+
+.modalSave {
+  background-color: #a2cb0c;
+  color: white;
+}
+
+.modalSave:hover {
+  background-color: #abd60f;
+  transform: scale(1.01);
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+  border: none !important;
+}
+
+.modal-content {
+  width: 90%;
+  padding: 10px 20px;
 }
